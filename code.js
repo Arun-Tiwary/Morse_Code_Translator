@@ -1,6 +1,20 @@
-var getinput = document.querySelector("#textarea");
-var translate = document.querySelector("#textarea");
-var  output = document.querySelector("#textarea");
+var getinput = document.querySelector("#input");
+var translate = document.querySelector("#translate");
+var  output = document.querySelector("#output");
+
+
+
+
+// var serverURL="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
+
+
+ var serverURL="https://api.funtranslations.com/translate/morse.json";
+
+// function to create url for fetching server response
+
+function URLtranslate(input){
+return serverURL+"?"+"text="+input;
+}
 
 
 // error handling
@@ -10,19 +24,10 @@ function errorHandler(error){
 
 }
 
-var serverURL="https://lessonfourapi.tanaypratap.repl.co/translate/yoda.json";
-
-// var serverURL="https://api.funtranslations.com/translate/morse.json";
-
-// function to create url for fetching server response
-
-function URLtranslate(input){
-return serverURL+"?"+"text="+inputValue;
-}
 
 // function to handle click and give response
 
-function clickHandle(input)
+function clickHandle()
 {
     var input= getinput.value;
 
@@ -31,7 +36,7 @@ function clickHandle(input)
     fetch(URLtranslate(input))
     .then(response=>response.json())
     .then(json=>{
-        var translatedText =json.contents.translated;
+        var transalatedText = json.contents.translated;
         output.innerText = transalatedText;
     })
 
@@ -40,4 +45,4 @@ function clickHandle(input)
 
 }
 
-textarea.addEventListener("click",clickHandler)
+translate.addEventListener("click",clickHandle)

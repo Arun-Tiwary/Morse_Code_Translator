@@ -6,28 +6,36 @@
 
 body{
 font-family: 'Tajawal', sans-serif;
+
+margin:0;
+background: linear-gradient(to right top, #071931 0%, #33274f 50%, #661e43 100%);
+
 }
 
 #heading{
-    background-color:var(--primarycolor);
-    block-size: auto;
-    margin: auto;
-    max-width: 100%;
-    text-align: center;
-    padding: 2rem 2rem 2rem 2rem;
-    border-color: blue;
+    /* background-color:var(--primarycolor); */
+   color: white;
+   display: block;
+   margin-left: 14rem;
+    font-size: 64px;
+    line-height: 1.0625;
+    font-weight: 700;
+    letter-spacing: -.009em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 .textarea{
     text-align: center;
     display: block;
     margin: auto;
     padding: 2rem;
-    border-width: 1ch;
+    
     border-spacing: 2ch;
-    font: 100;
+    font: 1000;
     box-sizing: 4rem;
     width: 25%;
     column-gap: 2rem;
+    font-size: large;
+
 }
 #spacing{
    padding: 1.5rem; 
@@ -37,6 +45,11 @@ color: black;
 background-color:var(--primarycolor);
 font:bold;
 font-size: large;
+
 width: 350px;
 max-width: 100%;
+box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+.img{
+    /* background-image: url(img/fig1.svg); */
 }
