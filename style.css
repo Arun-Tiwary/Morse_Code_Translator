@@ -3,17 +3,38 @@
 :root{--primarycolor:#6B7280;
 
 }
+::placeholder{
+    color: #2997ff; 
+}
+hr{
+    border: 1px solid white;
+}
+
+
 
 body{
 font-family: 'Tajawal', sans-serif;
+margin-top: 0px; 
+    margin-bottom: 0px; 
+    margin-left: 0px; 
+    margin-right: 0px;
+    page-break-after: o;
+    background-color: #E2E2E2;
+    line-height: .8em;
+    display:grid ;
 
-margin:0;
-background: linear-gradient(to right top, #071931 0%, #33274f 50%, #661e43 100%);
+}
+.bgcolor{
+    /* background: linear-gradient(to right top, #071931 0%, #33274f 100%, #661e43 100%); */
+    background-image: linear-gradient(30deg, #214079 1%, #663A7E 55%, #A82B7D 100%);
+    
+    
+    
 
 }
 
 #heading{
-    /* background-color:var(--primarycolor); */
+    
    color: white;
    display: block;
    margin-left: 14rem;
@@ -28,28 +49,115 @@ background: linear-gradient(to right top, #071931 0%, #33274f 50%, #661e43 100%)
     display: block;
     margin: auto;
     padding: 2rem;
+    outline: none;
     
-    border-spacing: 2ch;
+    border-spacing: 0ch;
     font: 1000;
     box-sizing: 4rem;
     width: 25%;
     column-gap: 2rem;
     font-size: large;
+    
+    background: rgba(0,0,0,0.48);
+    color: #2997ff;
+
+
 
 }
 #spacing{
    padding: 1.5rem; 
 }
 .background{
-color: black;
+color:white;
 background-color:var(--primarycolor);
 font:bold;
 font-size: large;
+letter-spacing: 0.4em;
+font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 
 width: 350px;
 max-width: 100%;
 box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
 }
-.img{
-    /* background-image: url(img/fig1.svg); */
+
+.button{
+    background-color: transparent;
+    border-width: 2px;
+    border-style: solid;
+    border-radius: 100px;
+    padding: 9px 17px;
+    font-weight: 600;
+    white-space: normal;
+    padding: 2rem;
+    outline: none;
+    display: block;
+    margin: auto;
+}
+
+.bg{
+    text-align: center;
+    color: #a1a1a6;
+    font-size: 40px;
+    line-height: 1.0625;
+    font-weight: 400;
+    letter-spacing: -.009em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    
+}
+.area{
+    height: 100px;
+    width:100px;
+    padding: 1rem 4rem;
+    background-size: 100% 56px;
+    background-repeat: 
+    no-repeat;
+    display: inline;
+    
+}
+
+
+.dark{
+    
+    background: #1d1d1f;
+    display: grid;
+    padding: ;
+    margin-top: 0%;
+
+}
+.gitimage{
+    background-image: url(img/icon.svg);
+}
+.linkdin-image{
+    background-image: url(img/linkedin.svg);
+}
+.twitter-image{
+    background-image: url(img/twitter.svg);
+}
+
+.aboutsection{
+  text-align: center;
+  margin-right: 16%;
+  margin-left:  20%;
+  display: flow-root;
+  display: grid;
+
+ 
+}
+.footer-bg-color{
+  /* background-color: #D1D5DB ;  */
+  /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  background-image: linear-gradient(30deg, #214079 1%, #663A7E 55%, #A82B7D 100%);
+*/}
+footer{
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    line-height: 1.0625;
+    font-weight: 400;
+    letter-spacing: -.009em;
+    font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+    
+}
+.about-content{
+    padding-bottom: 2rem;
 }
